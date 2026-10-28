@@ -1,0 +1,10 @@
+# Allow-list: upload only what the build needs. Anything else in the project folder (source media,
+# design files, the original music) stays local, so adding files here never breaks a deploy.
+/*
+!/src
+!/public
+!/index.html
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/vite.config.ts

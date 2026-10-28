@@ -1,0 +1,239 @@
+/* Admin uses a normal, responsive page (not the scaled kiosk stage) with large touch targets. */
+.admin {
+  min-height: 100%;
+  background: #f4f1e8;
+  color: var(--ink);
+  font-size: 18px;
+  overflow: auto;
+  height: 100%;
+}
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: var(--green-700);
+  color: var(--white);
+}
+.admin-title {
+  flex: 1;
+  font-weight: 800;
+  font-size: 24px;
+  opacity: 0.9;
+}
+.admin-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 24px;
+  background: var(--green-800);
+  overflow-x: auto;
+}
+.admin-tabs button {
+  padding: 16px 22px;
+  border: 0;
+  background: none;
+  color: var(--cream);
+  font: 700 18px var(--font);
+  border-bottom: 4px solid transparent;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.admin-tabs button.active {
+  opacity: 1;
+  border-color: var(--yellow);
+}
+.admin-body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+}
+.admin h2 {
+  margin: 8px 0;
+  font-size: 22px;
+}
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row.between {
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.row.end {
+  justify-content: flex-end;
+}
+.muted {
+  color: #5d6b61;
+  font-size: 15px;
+}
+.ok {
+  color: var(--green-600);
+  font-weight: 700;
+}
+.error {
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.a-btn {
+  min-height: 48px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #d5d0bf;
+  background: var(--white);
+  color: var(--ink);
+  font: 700 16px var(--font);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.a-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.a-btn.icon {
+  width: 48px;
+  padding: 0;
+}
+.a-btn-primary {
+  background: var(--yellow);
+  border-color: var(--yellow-deep);
+  color: var(--green-800);
+}
+.a-btn-danger {
+  border-color: #e5b4b4;
+  color: var(--maroon);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form label,
+.form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+}
+.form label.check {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.form label.check input {
+  width: 26px;
+  height: 26px;
+}
+.form input:not([type='checkbox']),
+.form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid #d5d0bf;
+  font: 500 18px var(--font);
+  color: var(--ink);
+  resize: vertical;
+}
+.form small {
+  font-weight: 500;
+  color: #5d6b61;
+}
+.segmented {
+  display: inline-flex;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #d5d0bf;
+  width: fit-content;
+}
+.segmented button {
+  min-width: 120px;
+  min-height: 48px;
+  border: 0;
+  background: var(--white);
+  font: 800 16px var(--font);
+  cursor: pointer;
+}
+.segmented button.active {
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.q-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.q-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.q-text {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.q-actions {
+  display: flex;
+  gap: 8px;
+}
+.tag {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 14px;
+}
+.tag.myth {
+  background: var(--maroon);
+  color: var(--white);
+}
+.tag.fact {
+  background: var(--yellow);
+  color: var(--green-800);
+}
+
+.image-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.image-picker img {
+  height: 160px;
+  max-width: 100%;
+  object-fit: contain;
+  background: var(--green-700);
+  border-radius: 12px;
+  padding: 8px;
+}
+.slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+}
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ece7d8;
+}

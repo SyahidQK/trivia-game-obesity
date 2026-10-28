@@ -1,0 +1,22 @@
+node_modules
+dist
+dev-dist
+*.log
+
+.vercel
+
+# Android build outputs (rebuild with `npm run apk`)
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+release
+APK FILE
+public/download
+
+# Large source media kept locally (over GitHub's file-size limits; the game uses trimmed copies in public/assets)
+MBM Hero_Heroine
+Kahoot Music 1 Hour.mp3
+
+# Local tool settings
+.claude
