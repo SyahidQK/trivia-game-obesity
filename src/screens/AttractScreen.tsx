@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { ADMIN_HOLD_MS, DEFAULT_IMAGES } from '../config';
+import { ADMIN_HOLD_MS, APPROVAL_CODE, DEFAULT_IMAGES } from '../config';
 import { IMAGE_SLOTS } from '../data/storage';
 import { useStoredImage } from '../game/hooks';
 import { Disclaimer } from '../components/Disclaimer';
@@ -97,6 +97,7 @@ export function AttractScreen({ canStart, onStart, onAdmin }: Props) {
         </p>
       )}
       <Disclaimer />
+      <p className="approval-code">{APPROVAL_CODE}</p>
     </Screen>
   );
 }

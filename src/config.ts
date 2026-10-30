@@ -20,6 +20,9 @@ export const MAX_NAME_LENGTH = 12;
 /** Disclaimer footer shown on the start and results screens. Replace the file (same name) to update it. */
 export const DISCLAIMER_IMAGE = 'assets/disclaimer.webp';
 
+/** Material approval/reference code, shown in small print at the bottom centre of the start screen. */
+export const APPROVAL_CODE = 'MY-NP-ELI-MOU-IDA-PUC-000001-10-22-2028';
+
 /** Background music. Replace the files in public/assets/ (keeping the names) to change the tracks. */
 export const MUSIC = {
   /** Looped while a question is on screen, restarting each question. */

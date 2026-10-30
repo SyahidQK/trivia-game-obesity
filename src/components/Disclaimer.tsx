@@ -4,7 +4,7 @@ import { DISCLAIMER_IMAGE } from '../config';
 export function Disclaimer() {
   return (
     <div className="disclaimer">
-      <img src={DISCLAIMER_IMAGE} alt="For further information, please consult your healthcare professional. Zuellig Pharma Sdn Bhd." />
+      <img src={DISCLAIMER_IMAGE} alt="For further information, please contact your healthcare professional. Zuellig Pharma Sdn Bhd." />
     </div>
   );
 }
